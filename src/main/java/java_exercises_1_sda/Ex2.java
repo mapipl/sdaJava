@@ -5,7 +5,7 @@ package java_exercises_1_sda;
 public class Ex2 {
 
     public static void main(String[] args) {
-        System.out.println(isPrime(13));
+        System.out.println(isPrime(1));
     }
 
     public static boolean isPrime(int number) {
@@ -14,6 +14,7 @@ public class Ex2 {
             for (int i = 2; i <= number / 2; i++) {
                 if (number % 2 == 0) {
                     result = false;
+                    break;
                 }
             }
         } else {
